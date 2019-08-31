@@ -1,0 +1,19 @@
+/* * {
+  color: black;
+}
+
+p {
+ color: red;   
+}
+
+.big {
+  font-size: 20px;
+}
+
+#howdy {
+  color: greenyellow;
+} */
+
+div > span h1 {
+  font-weight: 800;
+}
