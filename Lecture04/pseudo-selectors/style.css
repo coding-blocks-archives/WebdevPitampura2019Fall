@@ -1,0 +1,19 @@
+.one {
+  height: 60px;
+  width: 60px;
+  background-color: silver;
+}
+
+.one:hover {
+  background-color: black;
+  color: white;
+}
+
+.one:active {
+  background-color: white;
+  color: red;
+}
+
+.two:focus {
+  font-size: 30pt;
+}

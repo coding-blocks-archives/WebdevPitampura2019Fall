@@ -1,0 +1,15 @@
+div ul {
+  visibility: hidden;
+}
+
+div p {
+  display: none;
+}
+
+.tinydiv {
+  display: inline-block;
+}
+
+div {
+  height: 30px
+}

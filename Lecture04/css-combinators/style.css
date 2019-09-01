@@ -1,0 +1,24 @@
+div {
+  color: red;
+}
+
+div ~ p {
+  color: blue;
+}
+
+div > div {
+  font-size: 18pt;
+}
+
+div > ul > li {
+  background-color: aqua;
+}
+
+div > ul > li > ul > li {
+  background-color: bisque;
+}
+
+
+.outer > .inner {
+  font-style: italic;
+}
