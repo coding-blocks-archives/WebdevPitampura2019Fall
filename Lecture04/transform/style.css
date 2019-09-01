@@ -1,0 +1,44 @@
+div {
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  background-color: orange;
+  border: solid blue 4px;
+  font-size: 20pt;
+  padding: 20px;
+  color: indigo;
+}
+
+.one {
+  transform: scale(0.5)
+  /* height: 40px;
+  width: 40px; */
+}
+
+.two.x {
+  transform: rotateX(120deg)
+}
+
+.two.y {
+  transform: scaleY(0.701)
+}
+
+.three.x {
+  transform: translate(-30px, 40px)
+}
+
+.three.y {
+  transform: translateZ(-30px)
+}
+
+.four {
+  transform: skew(5deg, 5deg)
+}
+
+.five {
+  transform: rotate(30deg) translateX(100px)
+}
+
+.six {
+  transform: matrix(1.5, 1, 1, 1.5, 50, -50)
+}

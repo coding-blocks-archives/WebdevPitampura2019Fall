@@ -1,0 +1,32 @@
+div {
+  margin: 20px;
+  height: 80px;
+  width: 80px;
+  background-color: lightcyan;
+  border: solid black 1px
+}
+
+
+.one {
+  position: relative;
+  left: 40px;
+  bottom: 30px;
+}
+
+.two {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+.three {
+  position: fixed;
+  top: 70px;
+  left: 70px;
+}
+
+.four {
+  position: sticky;
+  top: 40px;
+  bottom: 40px;
+}
