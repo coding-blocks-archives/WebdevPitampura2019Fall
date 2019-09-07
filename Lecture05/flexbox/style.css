@@ -1,0 +1,40 @@
+.container {
+
+  margin: 20px;
+  height: 600px;
+  width: 600px;
+  background-color: blanchedalmond;
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  overflow: scroll;
+
+}
+
+
+.item {
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: brown;
+  font-size: 18pt;
+  padding: 10px;
+  color: white;
+
+}
+
+.x {
+  flex-grow: 5;
+  flex-shrink: 0;
+}
+
+.y {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
