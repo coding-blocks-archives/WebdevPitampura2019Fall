@@ -1,0 +1,32 @@
+div {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  background-color: slategray;
+  margin: 10px;
+
+}
+div:hover {
+  animation: bounce 2s infinite;
+}
+.one {
+  animation-timing-function: linear;
+}
+.two {
+  animation-timing-function: ease-in;
+}
+.three {
+  animation-timing-function: ease-out;
+}
+
+@keyframes bounce {
+  0% {
+  }
+
+  50% {
+    background-color: aqua;
+  }
+
+  100% {
+  }
+}

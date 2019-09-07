@@ -1,0 +1,23 @@
+div {
+  font-size: 24pt;
+  margin: 50px;
+  height: 80px;
+  width: 200px;
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 20px;
+  box-shadow: #666 5px 5px 8px;
+  transition: 0.4s;
+}
+
+div:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: #666 15px 15px 15px;
+  transition: 1s;
+}
+
+div:active {
+  transform: translate(3px, 3px);
+  box-shadow: #666 2px 2px 4px;
+  transition: 0.2s;
+}
