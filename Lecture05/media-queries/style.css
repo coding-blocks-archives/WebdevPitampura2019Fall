@@ -1,0 +1,19 @@
+div {
+  height: 300px;
+  width: 300px;
+  background-color: brown;
+}
+
+
+@media (min-width: 700px) {
+  div {
+    background-color: green;
+  }
+}
+
+
+@media (min-width: 900px) {
+  div {
+    background-color: blue;
+  }
+}
