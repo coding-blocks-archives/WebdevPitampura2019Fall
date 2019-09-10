@@ -5,17 +5,14 @@ let print = document.getElementById('print')
 print.onclick = function() {
   let start = new Date().getTime()
 
-  let html = ''
   for (let i = 1; i <= n.value; i++) {
     let x = ''
     if (i % 3 == 0) x += 'fizz'
     if (i % 5 == 0) x += 'buzz'
     if (x == '') x = i
 
-    html += `<li> ${x} </li>`
+    list.innerHTML += `<li> ${x} </li>`
   }
-
-  list.innerHTML += html
 
   let end = new Date().getTime()
   console.log(end - start)
