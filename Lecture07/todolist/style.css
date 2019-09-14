@@ -1,0 +1,9 @@
+.flex-centered {
+  height: 100%;
+  align-items: center;
+}
+
+#taskList li.done {
+  color: #6c757d;
+  text-decoration: line-through;
+}
