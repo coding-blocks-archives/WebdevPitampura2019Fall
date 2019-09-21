@@ -1,0 +1,32 @@
+$('.cl1').text('adgadsgadg')
+Object { 0: div.cl1, 1: div.cl1, 2: p.cl1, 3: p.cl1
+, length: 4, prevObject: Object(1) }
+
+$('.cl1')[0].text('adgadsgadg')
+TypeError: $(...)[0].text is not a function
+debugger eval code:1:14
+$('.cl1').text('adgadsgadg')
+Object { 0: div.cl1, 1: div.cl1, 2: p.cl1, 3: p.cl1
+, length: 4, prevObject: Object(1) }
+
+$($('.cl1')[0]).text('adgadsgadg')
+Object [ div.cl1
+ ]
+
+$($('.cl1')[0]).text('fdhjmrhkrhkjykr')
+Object [ div.cl1
+ ]
+
+document.getElementsByClassName('cl1')
+HTMLCollection(4) [ div.cl1, div.cl1, p.cl1, p.cl1
+ ]
+
+document.getElementsByClassName('cl1')[1]
+<div class="cl1">
+
+$(document.getElementsByClassName('cl1')[1])
+Object [ div.cl1
+ ]
+
+$(document.getElementsByClassName('cl1')[1]).text('gtnegen')
+Object [ div.cl1 ]
