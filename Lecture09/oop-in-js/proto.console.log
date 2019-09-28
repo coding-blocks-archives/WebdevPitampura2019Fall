@@ -1,0 +1,37 @@
+let a = 123
+undefined
+let b = 'asd'
+undefined
+let c = true
+undefined
+let d = [2,3,4]
+undefined
+let e = {l: 10}
+undefined
+let f = function () {console.log('hello')}
+undefined
+d._proto__
+undefined
+d.__proto__
+Array []
+
+e.__proto__
+Object { … }
+
+typeof e
+"object"
+typeof f
+"function"
+typeof d
+"object"
+typeof f
+"function"
+f.__proto__
+function ()
+
+e.__proto__ == b.__proto__.__proto__
+true
+e.__proto__ == d.__proto__.__proto__
+true
+e.__proto__.__proto__
+null
