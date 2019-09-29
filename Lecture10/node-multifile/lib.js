@@ -9,5 +9,7 @@ function sub (a, b) {
 console.log(sub(3,4))
 
 module.exports = {
-  add
+  add,
+  a: 10,
+  b: 20
 }
