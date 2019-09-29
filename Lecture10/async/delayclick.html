@@ -8,11 +8,13 @@
 </head>
 <body>
   <button onclick="clickfun()">CLICK ME!</button>
+  <button disabled id="cancel" onclick="cancel()">CANCEL</button>
   <button onclick="otherfun()">OTHER!</button>
   <div id="res"></div>
   <div id="count"></div>
   <script>
     let count = 0
+    let taskId = null;
     function clickfun() {
       // let start = new Date().getTime()
 
@@ -21,10 +23,20 @@
       // }
       // document.getElementById('res').innerText = 'HELLO'
 
-      setTimeout(() => {
+      taskId = setTimeout(() => {
         document.getElementById('res').innerText = 'HELLO'
+        document.getElementById('cancel').setAttribute('disabled', true)
       }, 5000)
 
+      document.getElementById('cancel').removeAttribute('disabled')
+
+    }
+
+    function cancel() {
+      if (taskId) {
+        clearTimeout(taskId)
+        document.getElementById('cancel').setAttribute('disabled', true)
+      }
     }
 
     function otherfun() {
