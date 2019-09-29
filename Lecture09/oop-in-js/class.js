@@ -17,3 +17,5 @@ class Student extends Person {
     this.grade = grade
   }
 }
+
+let s = new Student('Harry', 20, 10)
