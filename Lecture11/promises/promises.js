@@ -40,14 +40,6 @@ function writeFile(data1, data2, data3, done) {
   })
 }
 
-readFile1('asdsad', (err, data1) => {
-  readFile2('dnbdfgn', (err, data2) => {
-    readFile3('dgngdn', (err, data3) => {
-      writeFile(data1, data2, data3, () => {})
-    })
-  })
-})
-
 let errH = (err) => {
   if (err) console.error(err)
 }
