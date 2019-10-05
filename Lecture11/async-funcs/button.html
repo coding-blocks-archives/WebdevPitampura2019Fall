@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <button id="btnClick">CLICK</button>
+  <button id="btnWait">WAIT</button>
+  <button id="btnCount">COUNT</button>
+  <div id="result"></div>
+  <div id="counter"></div>
+
+  <script>
+    let result = document.getElementById('result')
+    let counter = document.getElementById('counter')
+    let btnClick = document.getElementById('btnClick')
+    let btnWait = document.getElementById('btnWait')
+    let btnCount = document.getElementById('btnCount')
+    let c = 0
+
+    btnCount.onclick = function () {
+      counter.innerText = ++c
+    }
+
+    btnClick.onclick = function () {
+      let start = new Date().getTime()
+      setTimeout(() => {
+        result.innerText = 'DONE!!!'
+        console.log('Time taken = ', new Date().getTime() - start)
+      }, 2000)
+    }
+
+    btnWait.onclick = function () {
+      let start = new Date().getTime();
+      while (new Date().getTime() - 3000 < start) {
+        /* do nothing */
+      }
+    }
+  </script>
+
+</body>
+</html>
