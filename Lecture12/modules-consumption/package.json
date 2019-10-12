@@ -1,0 +1,15 @@
+{
+  "name": "lecture12",
+  "version": "1.0.0",
+  "description": "This is for education purpose only",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abhishek97",
+  "license": "ISC",
+  "dependencies": {
+    "big-integer": "^1.6.47"
+  }
+}
