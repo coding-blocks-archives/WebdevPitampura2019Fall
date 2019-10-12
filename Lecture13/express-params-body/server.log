@@ -1,0 +1,145 @@
+
+    /hello?name=John&a=&b=false
+    {"name":"John","a":"","b":"false"}
+    {}
+  
+    /favicon.ico
+    {}
+    {}
+  
+    /hello?name=John
+    {"name":"John"}
+    {}
+  
+    /favicon.ico
+    {}
+    {}
+  
+    /bye/John?greeting=Alvida
+    {"greeting":"Alvida"}
+    {}
+  
+    /favicon.ico
+    {}
+    {}
+   ==============
+    URL    = /favicon.ico
+    QUERY  = {}
+    PARAMS = {}
+      ===============
+   ==============
+    URL    = /favicon.ico
+    QUERY  = {}
+    PARAMS = {}
+      ===============
+   ==============
+    URL    = /hello?name=John&a=&b=false
+    QUERY  = {"name":"John","a":"","b":"false"}
+    PARAMS = {}
+      ===============
+   ==============
+    URL    = /favicon.ico
+    QUERY  = {}
+    PARAMS = {}
+      ===============
+   ==============
+    URL    = /favicon.ico
+    QUERY  = {}
+    PARAMS = {}
+      ===============
+   ==============
+    URL    = /hello?name=John
+    QUERY  = {"name":"John"}
+    PARAMS = {}
+      ===============
+   ==============
+    URL    = /favicon.ico
+    QUERY  = {}
+    PARAMS = {}
+      ===============
+   ==============
+    URL    = /favicon.ico
+    QUERY  = {}
+    PARAMS = {}
+      ===============
+   ==============
+    URL    = /bye/John?greeting=Alvida
+    QUERY  = {"greeting":"Alvida"}
+    PARAMS = {}
+      ===============
+   ==============
+    URL    = /favicon.ico
+    QUERY  = {}
+    PARAMS = {}
+      ===============
+  
+    ==============
+    URL    = /
+    QUERY  = {}
+    PARAMS = {}
+    ===============
+
+  
+    ==============
+    URL    = /xyz
+    QUERY  = {}
+    PARAMS = {}
+    ===============
+
+  
+    ==============
+    URL    = /xyz
+    QUERY  = {}
+    PARAMS = {}
+    ===============
+
+  
+    ==============
+    URL    = /xyz
+    QUERY  = {}
+    PARAMS = {}
+    ===============
+
+  
+    ==============
+    URL    = /xyz
+    QUERY  = {}
+    PARAMS = {}
+    ===============
+
+  
+    ==============
+    URL    = /xyz
+    QUERY  = {}
+    PARAMS = {}
+    ===============
+
+  
+    ==============
+    URL    = /xyz
+    QUERY  = {}
+    PARAMS = {}
+    ===============
+
+  
+    ==============
+    URL    = /xyz
+    QUERY  = {}
+    PARAMS = {}
+    ===============
+
+  
+    ==============
+    URL    = /xyz
+    QUERY  = {}
+    PARAMS = {}
+    ===============
+
+  
+    ==============
+    URL    = /xyz
+    QUERY  = {}
+    PARAMS = {}
+    ===============
+
+  
