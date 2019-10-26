@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello</h1>
+  <p>This is a para</p>
+  <p>This has been viewed {{viewcount}} times</p>
+  <h2>This is a list of fruits</h2>
+  {{fruits}}
+  <br>
+  {{x}} {{x.a}} {{x.b}}
+  <ul>
+    {{#each fruits as |f|}}
+      <li> {{f}} </li>
+    {{/each}}
+  </ul>
+</body>
+</html>

@@ -2,18 +2,19 @@ const express = require('express')
 
 const app = express()
 
+app.set('view engine', 'hbs')
+
 let viewcount = 0
+let fruits = ['Apple', 'Mango']
+let x = {a: 10, b: 20}
 
 app.get('/', (req, res) => {
-  res.send(`
-  <html>
-  <body>
-    <h1>Hello</h1>
-    <p>This is a para</p>
-    <p>This has been viewed ${++viewcount} times</p>
-  </body>
-  </html>
-  `)
+  ++viewcount
+  res.render('home', {
+    fruits,
+    viewcount,
+    x
+  })
 })
 
 
