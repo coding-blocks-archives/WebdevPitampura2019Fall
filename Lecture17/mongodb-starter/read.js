@@ -7,7 +7,12 @@ async function read () {
   const myDB = client.db('myDB')
   const tasks = myDB.collection('tasks')
 
-  const cursor = tasks.find({priority: 1})
+  const cursor = tasks.find({
+    $and: [
+      { priority: { $lt: 2 }},
+      { done: false }
+    ]
+  }).sort( { priority: 1 })
   // console.log(cursor)
 
   const data = await cursor.toArray()
