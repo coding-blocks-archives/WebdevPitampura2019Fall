@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "mysql2": "^2.0.0",
-    "sequelize": "^5.21.2",
-    "sqlite3": "^4.1.0"
+    "sqlite3": "^4.1.0",
+    "sequelize": "^5.21.2"
   },
   "devDependencies": {},
   "scripts": {
