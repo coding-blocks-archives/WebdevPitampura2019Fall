@@ -1,5 +1,8 @@
 const { Article, User } = require('../db/models')
 
+async function getAllArticles() {
+  return await Article.findAll()
+}
 async function getArticleById(id) {
   return await Article.findOne({
     include: [{ model: User, as: 'author' }],
@@ -27,6 +30,7 @@ async function createArticle(authorId, title, subtitle, body) {
 }
 
 module.exports = {
+  getAllArticles,
   getArticleById,
   getArticleByAuthorEmail,
   createArticle,

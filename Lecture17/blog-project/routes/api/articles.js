@@ -1,5 +1,5 @@
 const { Router } = require('express')
-const { getArticleById, getArticleByAuthorEmail, createArticle } = require('../../controllers/articles')
+const { getAllArticles, getArticleById, getArticleByAuthorEmail, createArticle } = require('../../controllers/articles')
 
 const route = Router()
 
@@ -19,6 +19,8 @@ route.get('/:id', async (req, res) => {
 })
 
 route.get('/', async (req, res) => {
+  console.log(req.query)
+
   if (req.query.author_email) {
     const article = await getArticleByAuthorEmail(req.query.author_email)
     if (article) {
@@ -28,6 +30,9 @@ route.get('/', async (req, res) => {
         error: 'No article by such email id found',
       })
     }
+  } else {
+    const articles = await getAllArticles()
+    return res.status(200).send(articles)
   }
 })
 
