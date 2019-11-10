@@ -2,23 +2,39 @@
   <div class="form-group col-12">
     <label for="title">Heading</label>
     <input name="title"
-          type="text" class="form-control"
-          id="title" placeholder="Heading">
+           type="text" class="form-control"
+           id="title" placeholder="Heading">
   </div>
 
   <div class="form-group col-12">
     <label for="subtitle">Article Subheading</label>
     <input name="subtitle"
-          type="text" class="form-control"
-          id="subtitle" placeholder="Article Subheading">
+           type="text" class="form-control"
+           id="subtitle" placeholder="Article Subheading">
   </div>
 
   <div class="form-group col-12">
     <label for="body">Article Body</label>
     <textarea name="body"
-          class="form-control" id="body"
-          placeholder="Write your article here"></textarea>
+              class="form-control" id="body"
+              placeholder="Write your article here"></textarea>
   </div>
+
+  <div class="form-group col-12">
+    <div>Categories</div>
+    {{#each categories as |category|}}
+    <div class="p-2" style="display: inline-block;">
+      <input name="category" value="{{category.id}}" type="checkbox">
+      <label class="text-sm-left">{{category.name}}</label>
+    </div>
+
+    {{/each}}
+    <div class="p-2" style="display: inline-block;">
+      <input name="category" value="10" type="checkbox">
+      <label class="text-sm-left">wrong</label>
+    </div>
+  </div>
+
 
   <div class="form-group col-10">
     <div class="row">

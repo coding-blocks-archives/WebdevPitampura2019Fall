@@ -41,6 +41,14 @@ const Comment = db.define('comment', {
   },
 })
 
+const Category = db.define('category', {
+  name: {
+    type: Sequelize.STRING(30),
+    allowNull: false,
+    unique: true
+  },
+})
+
 Article.belongsTo(User, { as: 'author' })
 User.hasMany(Article, { as: 'author' })
 
@@ -50,9 +58,13 @@ User.hasMany(Comment, { as: 'commentor' })
 Comment.belongsTo(Article)
 Article.hasMany(Comment)
 
+Article.belongsToMany(Category, {through: 'article_category'})
+Category.belongsToMany(Article, {through: 'article_category'})
+
 module.exports = {
   db,
   Article,
   User,
   Comment,
+  Category
 }
