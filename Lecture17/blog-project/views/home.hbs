@@ -7,14 +7,19 @@
 
   <div class="container">
 
-    <h1 class="text-center"> Articles </h1>
+    <h1 class="text-center"> {{title}} </h1>
 
+
+    {{!-- New Article Form --}}
+    <h2>Add an Article</h2>
+    {{> new_article_form}}
+
+    {{!-- Article List --}}
+    <h2> Read Articles </h2>
     {{#each articles as |article|}}
       {{> article_card article}}
     {{/each}}
 
   </div>
-
-  <p>This is a blog</p>
 </body>
 </html>
