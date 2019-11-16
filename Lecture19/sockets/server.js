@@ -12,6 +12,8 @@ io.on('connection', (socket) => {
 
   socket.on('count', () => {
     console.log(`Button clicked ${++count} times`)
+
+    socket.broadcast.emit('counted', {count})
   })
 
 })
