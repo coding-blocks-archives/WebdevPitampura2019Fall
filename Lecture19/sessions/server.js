@@ -62,6 +62,12 @@ app.get('/profile', async (req, res) => {
   }
 })
 
+app.get('/logout', (req, res) => {
+  req.session.destroy()
+  req.session = null
+  res.redirect('/login')
+})
+
 db.sync().then(() => {
   app.listen(7676, () => {
     console.log('Started')
