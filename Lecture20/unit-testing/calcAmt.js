@@ -8,6 +8,10 @@ const VALID_PROMOS = [
 
 function calcAmt(price, state, promo) {
 
+  if (typeof price !== 'number') {
+    throw new Error('Invalid Price Format')
+  }
+
   const bill = {amount: price}
 
   VALID_PROMOS.forEach(p => {
